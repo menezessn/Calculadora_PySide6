@@ -1,3 +1,6 @@
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from buttons import Button
 from PySide6.QtWidgets import QLineEdit
 from variables import BIG_FONT_SIZE, MINIMUM_WIDTH
 from PySide6.QtCore import Qt

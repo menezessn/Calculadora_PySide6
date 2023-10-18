@@ -26,14 +26,14 @@ if __name__ == '__main__':
     window.setWindowIcon(icon)
     app.setWindowIcon(icon)
 
-    info = Info('teste')
+    info = Info('Sua conta')
     window.addWidgetToVLayout(info)
 
     display = Display()
     window.addWidgetToVLayout(display)
 
     # grid
-    buttonsGrid = ButtonsGrid(display)
+    buttonsGrid = ButtonsGrid(display, info)
     window.vLayout.addLayout(buttonsGrid)
 
     window.adjustFixedSize()
